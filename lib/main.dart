@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:user_info_age_calculator/views/HomeScreen.dart';
 import 'views/user_view.dart';
 import 'views/age_view.dart';
 
@@ -10,38 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter MVC Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        appBar: AppBar(title: Text('Flutter MVC Demo')),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => UserView()),
-                  );
-                },
-                child: Text('User Info'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => AgeView()),
-                  );
-                },
-                child: Text('Age Calculator'),
-              ),
-            ],
-          ),
-        ),
-      ),
+      home: HomeScreen(), // Set HomeScreen as the home widget
     );
   }
 }

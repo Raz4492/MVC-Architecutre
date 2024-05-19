@@ -1,11 +1,7 @@
 class Age {
-  final int age;
+  final int years;
+  final int months;
+  final int days;
 
-  Age({required this.age});
-
-  factory Age.fromJson(Map<String, dynamic> json) {
-    return Age(
-      age: json['age'],
-    );
-  }
+  Age({required this.years, required this.months, required this.days});
 }
