@@ -27,8 +27,14 @@ jobs:
       with:
         flutter-version: 'stable'
 
+    - name: Verify Flutter setup
+      run: flutter --version
+
     - name: Flutter Pub Get
       run: flutter pub get
+
+    - name: Run tests
+      run: flutter test
 
     - name: Build APK
       run: flutter build apk --release
