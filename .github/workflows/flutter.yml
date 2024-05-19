@@ -23,9 +23,9 @@ jobs:
         java-version: '11'
 
     - name: Install Flutter
-      uses: flutter-action/flutter-action@v2
+      uses: subosito/flutter-action@v2
       with:
-        flutter-version: '3.3.10'
+        flutter-version: 'stable'
 
     - name: Verify Flutter setup
       run: flutter --version
