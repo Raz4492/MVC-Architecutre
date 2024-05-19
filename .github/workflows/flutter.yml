@@ -25,7 +25,7 @@ jobs:
     - name: Install Flutter
       uses: flutter-action/flutter-action@v2
       with:
-        flutter-version: '3.19.5'
+        flutter-version: '3.3.10'
 
     - name: Verify Flutter setup
       run: flutter --version
